@@ -36,9 +36,9 @@ describe('4 - Implemente os casos de teste para a função `circle`', () => {
       area: 153.86,
       circumference: 43.96
     });
-    expect(circle(3)).toEqual({
+    expect(circle(3)).toStrictEqual({
       radius: 3,
-      area: 28.26,
+      area: 28.259999999999998,
       circumference: 18.84
     });
     expect(circle(typeof radius !== 'number')).toBeUndefined();
@@ -51,7 +51,7 @@ describe('4 - Implemente os casos de teste para a função `circle`', () => {
       circumference: 12.56
     });
     expect(Object.values(circle(3))[1]).toBeCloseTo(28.26);
-    expect(circle(3)).toEqual({
+    expect(circle(3)).toStrictEqual({
       radius: 3,
       area: 28.259999999999998,
       circumference: 18.84
