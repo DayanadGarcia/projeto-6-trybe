@@ -44,6 +44,13 @@
   
 */
 
-const createMenu = () => {};
+const createMenu = (objQualquer) => {
+  let objetoRetornado = {
+    fetchMenu: () => objQualquer,
+    consumption: [],
+    order: (strRecebida) => objetoRetornado.consumption.push(strRecebida),
+
+  };
+};
 
 module.exports = createMenu;
